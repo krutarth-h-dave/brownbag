@@ -1,4 +1,4 @@
-import { future, highlight } from '@mdx-deck/themes'
+import { future, highlight } from "@mdx-deck/themes"
 
 export const theme = {
   ...future,
@@ -9,27 +9,31 @@ export const theme = {
 
 <Notes>
 
-- Krutarth Introduction 
-- Team, Frontend
-- Agenda
-- History of Web Development
-- Evolution, Story
-- Why the idea Web for App
-- What it means
-- How we implemented it
-- Iterations and Learnings
-- Current State
-- Future
+- Krutarth Introduction
+- Team, Frontend Platform
 
 </Notes>
 
 ---
 
-## Web Development
+## Overview
+
+- History
+- Evolution
+- What? 
+- Why?
+- How? 
+- Learnings
+
+---
+
+## History
 
 <Notes>
 
 - Websites for the Internet
+- WWW got invented in 1989
+- First Website in 1991
 - Static Pages or Web Applications
 - Either Give information to user or let user do something on your Web i.e. Submit some data, compute something, get updated info, contextual info for the user
 - Web App
@@ -41,9 +45,7 @@ export const theme = {
 
 ---
 
-## Stacks
-
-
+## Web Development Stack
 
 - HTML
 - CSS
@@ -52,15 +54,19 @@ export const theme = {
 - Backend Server
 - Hosting
 
-
 <Notes>
 
 - HTML: instructs the browser on how to display the underlying content. It forms the basic building block of a website.
-- CSS: provides styles to format the HTML components on the browser. CSS determines the fonts, size, colors, and other static elements of the frontend. 
-- JavsScript: a programming language that turns HTML components into dynamic objects. It brings interactiveness to the front end. 
+- CSS: provides styles to format the HTML components on the browser. CSS determines the fonts, size, colors, and other static elements of the frontend.
+- JavsScript: a programming language that turns HTML components into dynamic objects. It brings interactiveness to the front end.
 - Databases: User information, transactions, products, and other data are stored in a database.
 - Backend Server: Data access layer which talks with Client Side
 - Hosting: A service that enables Web Apps to be published on the internet
+
+- How to scale to 10M users?
+- Issues with plain HTML CSS JS, Imperative
+- How to update the UI without reloading the entire page
+- No opinions on doing something a certain way
 
 </Notes>
 
@@ -70,22 +76,14 @@ export const theme = {
 
 ...
 
-
-
 - Frontend UI Frameworks
 - Cloud
-- CI/CD 
+- CI/CD
 - Infrastructure
-
-
 
 <Notes>
 
-- Basic Setup works
-- How to scale to 10M users
-- Issues with plain HTML CSS JS, Imperative
-- How to update the UI without reloading the entire page
-- No opinions on doing something a certain way
+- Transit to React and History
 
 </Notes>
 
@@ -93,13 +91,10 @@ export const theme = {
 
 ## React
 
-
-
 - A JS library for building UI
 - Declarative
 - Component-Based
 - Learn Once, Write Anywhere
-
 
 <Notes>
 
@@ -116,25 +111,26 @@ export const theme = {
 
 ## History & Timeline
 
-
-
 - 2011 – An early prototype of React
 - 2012 – Something new had started at Facebook
-- 2013 – The year of the Big Launch
-- 2014 – The year of Expansion
+- 2013 – React gets open sourced
+- 2014 – Expansion
 - 2015 – React is Stable
 - 2016 – React gets mainstream
 - 2016 - Release of React Native for Android
-
 
 <Notes>
 
 - Jordan Walke created FaxJS, the early prototype of React – shipped a search element on Facebook.
 - Facebook Ads became hard to manage, so Facebook needed to come up with a good solution for it. Jordan Walke worked on the prototype and created React.
-- Instagram wanted to adopt Facebook’s new technology. By this, Facebook had a pressure to decouple React from Facebook and make it open-sourceable. Most of this was done by Pete Hunt.
-- 2013 React gets open sourced 
+- Instagram wanted to adopt Facebook’s new technology.
+ By this, Facebook had a pressure to decouple React from Facebook and make it open-sourceable. Most of this was done by Pete Hunt.
+- 2013 React gets open sourced
 - Community 2014
 - 2015 Flipboard, AirBnB, Facebook
+
+- The UX on Websites is not that good on Mobile phones
+- Transit to Mobile Apps
 
 </Notes>
 
@@ -142,25 +138,46 @@ export const theme = {
 
 ## Mobile Apps
 
-### Challenges
+<Notes>
 
+- Apple Launched First iPhone in 2007
+- AppStore launched in 2008
+- Superior Experience than Web Apps
 
+</Notes>
 
-- App Updates
-- A/B Experiements
-- App size
-- Time to deliver
+---
 
+### Pros
+
+- Faster than web apps
+- Access to Native System Resources (CPU, GPU)
+- Can work offline
+- Safe and Secure
+- Great UX
 
 <Notes>
-- All the users should be able to use the latest versions of the features
-- Users should not have to update the App in order to be at the latest version of the App
-- Force updates should not block User journey
-- Eliminate issues with Over the air updates 
-- OTA updates result in double updates (OTA + PlayStore)
-- OTA updates only work if the user is on the latest version of the PlayStore
-- OTA updates only work for Android
 
+- Reliable and Stable
+- UI is downloaded already and available on Native side
+
+</Notes>
+
+---
+
+### Cons
+
+- More Expensive to build
+- App Updates
+- App Size
+- Time to deliver (PS + AS)
+
+<Notes>
+
+- All the users want latest versions of the features
+- Users don't like to update the App 
+- Users hate Force updates
+- OTA updates result in double updates (OTA + PlayStore)
 - A/B Experiments should be easy to carry out
 - To Reduce App Size and always keep it under 30 MB
 - Eliminate the time taken in the App release cycle
@@ -172,17 +189,37 @@ export const theme = {
 
 ## Solution
 
-### Web for App
+- Hybrid App
+
+<Notes>
+
+- No one size fits all solution existing
+- Mobile Apps and Web Apps has their Pros and Cons
+
+</Notes>
+
+---
+
+### What is a Hybrid App? 
+
+1. Native Mobile App
+2. WebView
+3. Web for App
+
+---
+
+## Web for App
 
 <Notes>
 
 - When your page is dynamic in nature, needs alot of releases and updates
-- A Web Application created to be consumed from your Mobile App 
-- Shell is Mobile App 
+- A Web Application created to be consumed from your Mobile App
+- Shell is Mobile App
 - Web App gets rendered inside the WebView
-- Who all uses it? 
+- Who all uses it?
 - Swiggy Instamart and Genie, Amazon Entire App, Alot of other Apps
 - What are the key points taken into consideration of making a final decision of the Web Platform tech stack which will be used and consumed in the Mobile Apps to achieve the following goals.
+- So far we learnt Web Development, History, React, Mobile Apps, Hybrid Apps
 
 </Notes>
 
@@ -190,16 +227,16 @@ export const theme = {
 
 ## What's Faster?
 
-Request -> Server -> MySQL -> HTML -> Response
+Request -> NodeJS Server -> API Call -> HTML -> Response -> Render
 
 or
 
-Request -> Server -> MySQL -> JSON -> Response -> Parse -> Render in JS
+Request -> NodeJS Server -> Empty HTML+JS Bundles -> Execute JS Bundle ->  API Call -> Parse -> Render in JS
 
 <Notes>
 
-What's Server Side Rendering? 
-What's Client Side Rendering? 
+What's Server Side Rendering?
+What's Client Side Rendering?
 
 </Notes>
 
@@ -207,18 +244,13 @@ What's Client Side Rendering?
 
 ## CSR
 
-
-
-- Client Side Rendering
-
 - User makes request to the Webpage
 - Server sends JS bundle to browser
 - Browser downloads the JS
 - Browser executes the JS
 - APIs are called for Data, User sees placeholders
-- Data fills the placeholders and paints HTML 
+- Data fills the placeholders and paints HTML
 - Page is now viewable and interactable
-
 
 <Notes>
 
@@ -230,27 +262,26 @@ What's Client Side Rendering?
 
 ## Pros and Cons
 
-- Website's JS is rendered in your browser
+- Cheap and easy to host
 
+- HTML is prepared on client
+- Poor User Experience on Slower devices
 - Heavier initial page load due to loading of the framework, app code, and assets
-- In most cases, requires an external library
-
 
 ---
 
 ## SSR
 
-
-
 - Server Side Rendering
 
 - User makes request to the Webpage
-- Server prepares the HTML by fetching the required data
-- Server sends the Ready to be rendered HTML over the wire 
-- Browser renders the page, Now Viewable and Browser downloads the JS
+- Server calls other APIs and fetches the data 
+- Server prepares the HTML from data
+- Server sends the Ready to be rendered HTML over the wire
+- Browser renders the page, Now Viewable
+- Browser downloads the JS
 - Browser executes JS
-- Page is now interactable 
-
+- Page is now interactable
 
 <Notes>
 
@@ -262,37 +293,29 @@ What's Client Side Rendering?
 
 ## Pros and Cons
 
-
-
-- Website's JS is rendered on your Server
-
+- HTML is prepared on the Server
 - Faster initial page load time
-- Optimal for users with a slow internet connection 
+- Optimal for users with a slow internet connection
 - Good UX
-- Better SEO
-- High server load
 
+- Expensive to host
 
 ---
 
 ## Tech Stack Expectations
 
-
-
-- Familiar with the Developers
-
 - Reliability
-- Statically Typed
+- Performant
 - Server Driven
+- Statically Typed
+- Familiar with the Developers
 - Abstractions
 - Third Party SDK integrations
 - Community Support
 
-
 <Notes>
 
 - Proven Reliability earlier in the industry
-
 - Statically Typed (Preferably ReactJS+TypeScript based)
 - Server Driven
 - Abstractions to help developers achieve goals in a defined way
@@ -303,9 +326,7 @@ What's Client Side Rendering?
 
 ---
 
-## Solution
-
-
+## Current Solution
 
 - Native Frameworks to stay (React Native)
 
@@ -313,17 +334,16 @@ What's Client Side Rendering?
 - When to build features in Web Framework
 - Ecosystem Validity
 
-
 <Notes>
 
 - Mobile
-- Features that deals with Native Integrations will be Native and require App Updates (Bank SDKs like Federal, CreditVidya, BureauID, UPI, Payments, device-binding)
-- Features that need Native resources will be Native like SMS Parsing and Share Functionality
-- Camera, Audio, Video
+  - Features that deals with Native Integrations will be Native and require App Updates (Bank SDKs like Federal, CreditVidya, BureauID, UPI, Payments, device-binding)
+  - Features that need Native resources will be Native like SMS Parsing and Share Functionality
+  - Camera, Audio, Video
 - Web
-- Home Screen of Jupiter
-- CVPs, Banners
-- Money Tab
+  - Home Screen of Jupiter
+  - CVPs, Banners
+  - Money Tab
 - Dynamic in nature
 
 </Notes>
@@ -332,54 +352,42 @@ What's Client Side Rendering?
 
 ## Candidates
 
-
-
 #### HotWired Turbo + AdonisJS
-#### NextJS
-#### Remix
 
+#### NextJS
+
+#### Remix
 
 ---
 
 ## HotWired Turbo + AdonisJS
 
- Hotwire is an alternative approach to building modern web applications without using much JavaScript
- Hotwire - HTML over the wire
-
-
+Hotwire is an alternative approach to building modern web applications without using much JavaScript
+Hotwire - HTML over the wire
 
 - Inspired from Ruby on Rails
 - Developed by BaseCamp Team for Hey Product
-
 
 ---
 
 ## Pros
 
-
-
 - Fast page loads, Less JS, HTML over the Wire
-
 - Template rendering on the Server
-
 
 ---
 
 ## Cons
 
-
-
-- No Support for Caching the Screens, Route Pre-fetching
-
-- Difficulty in Hiring 
+- No Support for Caching the Screens
+- Difficulty in Hiring
 - Framework Learning Curve
-- Adoption + Community Support
-
+- No Framework adoption
+- No Community Support
 
 <Notes>
 
-- Most of the Web App Engineers come from a ReactJS background
-- People may want to keep working on the ReactJS + TypeScript / Flutter ecosystem, considering the safety and to stay relevant in the market 
+- Most of the Web App Engineers - ReactJS background
 - Unfamiliarity with AdonisJS, .edge files, syntax
 - Hard to enforce best practices
 - People might lose interest in the Tech Stack after a period of time
@@ -393,49 +401,38 @@ What's Client Side Rendering?
 
 ## NextJS
 
-A flexible React framework that gives you building blocks to create fast web applications.
+React, But on the Server
 
 ---
 
 ## Pros
 
-
-
 - Used pan-industry
 
 - Detailed in-depth documentation
 - Little to no learning curve for ReactJS developers
-- Route pre-fetching
 - Code Splitting and Code Bundling
 
-
 ---
+
 ## Cons
 
-
-
-- Nested Routes are not supported out of the box
-
-- Same UI components have to be copy-pasted on the pages that shares the same components 
 - Higher JS payloads size
 - Complicated strategies to make Websites fast (SSG+SSR+ISR) + Code Splitting
-
 
 ---
 
 ## Remix
-
-
 
 - A full-stack web framework
 
 - Lets you focus on the user interface and work back through web fundamentals
 - Fast, slick, and resilient user experience
 
-
 <Notes>
 
-- Remix is an attempt to prove AGAINST the overall consensus around ReactJS based frameworks in the industry is that one has to either sacrifice ReactJS or choose Static Site Generation for lighting fast, accessible UI. 
+- Remix is an attempt to prove AGAINST the overall consensus around ReactJS based frameworks
+- in the industry is that one has to either sacrifice ReactJS for lighting fast, accessible UI.
 
 </Notes>
 
@@ -443,29 +440,22 @@ A flexible React framework that gives you building blocks to create fast web app
 
 ## Pros
 
-
-
-- Build by folks who made React Router, Mobx (Ryan Florence, Kent C Dodds) 
-
-- Build on the same hypothesis as HotWired Turbo or Ruby or Rails philosophy
-- Most web apps fetch inside of components, creating request waterfalls, slower loads, and jank.
-- Detailed in-depth documentation
-- There is little to no learning curve for ReactJS developers
 - SSR
-- Nested Routes Support
+- Built by folks who made React Router, Mobx (Ryan Florence, Kent C Dodds)
+- Built on the same philosophy of HTML over the Wire
+- Detailed in-depth documentation
+- Little to no learning curve for ReactJS developers
 - Custom Error Boundaries
 - Pre-fetch Routing
 
-
 <Notes>
 
-- Most web apps fetch inside of components, creating request waterfalls, slower loads, and jank.
-Remix loads data in parallel on the server and sends a fully formed HTML document. Way faster, jank-free
-- Through nested routes, Remix can eliminate nearly every loading state.
+- Most web apps fetch inside of components, creating request waterfalls, slower loads, and jank
+- Remix loads data in parallel on the server and sends a fully formed HTML document. Way faster, jank-free
 - Remix gives built-in Error handling, Web Apps don’t need to be refreshed when running into problems
-- Remix can prefetch everything in parallel before the user clicks a link. 
-Caches the Screens 
-Prefetches the links
+- Remix can prefetch everything in parallel before the user clicks a link.
+  Caches the Screens
+  Prefetches the links
 
 </Notes>
 
@@ -473,60 +463,81 @@ Prefetches the links
 
 ## Cons
 
-
-
 - Latest framework in the industry, pretty new
-
 
 <Notes>
 
 - Can bet on this framework considering the adoption and hype in the community and also the creators behind it
+- Talk about Remix vs NextJS comparision and overall JS Chunks
 
 </Notes>
 
 ---
 
-## Remix vs NextJS
-
-
-
-- Remix is as fast or faster than Next.js at serving static content
-
-- Remix is faster than Next.js at serving dynamic content
-- Remix enables fast user experiences even on slow networks
-- Remix automatically handles errors, interruptions, and race conditions, Next.js doesn't
-- Next.js encourages client side JavaScript for serving dynamic content, Remix doesn't
-- Next.js requires client side JavaScript for data mutations, Remix doesn't
-- Next.js build times increase linearly with your data, Remix build times are nearly instant and decoupled from data
-- Next.js requires you to change your application architecture and sacrifice performance when your data scales
-- Remix's abstractions lead to better application code
-
+### Current State
 
 <Notes>
 
-- How this comparision was evaluated
-- Remix Team figured the fairest way to compare the frameworks would be to take a Next.js example app that the Vercel team wrote themselves. Since they wrote it, the decisions they made should reflect how they intend you to build your app. It should also show off the features the Vercel team is most proud of.
-- We ported the Commerce Example from the Next.js examples page. It has a handful of real world features we liked, and seems to be the one they put the most effort into.
-
+- Home page on HotWired Turbo and AdonisJS
+- Money Tab Developed in Remix
 
 </Notes>
 
 ---
 
-## Highlights
+### Challenges of Hybrid App
 
-- Web Development
+- Auth
+- Headers
+- WebView
+- Chatty Communication Bridge
 
-- History and Evolution of Tech Stacks
-- React
-- CSR and SSR
-- Web for App 
-- AdonisJS + HotWired
-- Remix
+<Notes>
+
+- Talk about Device binding, Mpin/ BioMetrics
+- Without Headers, Standalone Web App doesnt work
+- Chatty communication Bridge , onMessage and postMessage
+
+</Notes>
 
 ---
 
-## Fin
+## Let me ask again, What's Faster?
 
+Mobile -> API call -> Response -> Render
 
+or
 
+Mobile -> WebView -> Node Server -> Backend Server -> Data -> HTML -> Response -> Render in WebView
+
+---
+
+## Learnings
+
+<Notes>
+
+- Talk about Hardware Acceleration, CPU and GPU, System Resources
+- Native Apps work Offline
+- Talk about Main User Jorneys, Take Swiggy Instamart and Help Example
+- Don't compromise UX with Agility
+- Page Load times
+- HTML over the wire, but takes time in rendering in User WebView
+- Users are on Different WebView versions and patchy Internet
+- Can't adhere great p90 and p95s
+
+</Notes>
+
+---
+
+## Takeaways
+
+<Notes>
+
+- When to use Web App - Secondary User Jorneys
+- Primary User journeys like Home/ Lobby, Payments Experience, Keep as Native as possible
+
+</Notes>
+
+---
+
+## Fin.
